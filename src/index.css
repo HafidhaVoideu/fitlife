@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-secondary scroll-smooth;
+  }
+
+  html::-webkit-scrollbar {
+    width: 7px;
+  }
+  html::-webkit-scrollbar-track {
+    @apply bg-lightgray;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    @apply bg-coquelicot rounded-2xl;
+  }
+
+  ul {
+    list-style: none;
+  }
+  .section {
+    @apply w-11/12  mx-auto lg:w-10/12 p-1 mt-32;
+  }
+
+  .section-bg {
+    @apply bg-hero-bg;
+  }
+  .footer-bg {
+    @apply bg-footer-bg;
+  }
+
+  .gallery::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .gallery::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  .gallery::-webkit-scrollbar-thumb {
+    @apply bg-coquelicot rounded-2xl;
+  }
+
+  .btn--black:hover {
+    @apply text-white bg-blackfogra_3;
+  }
+  .btn--white:hover {
+    @apply text-coquelicot bg-white;
+  }
+}
