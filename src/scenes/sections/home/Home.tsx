@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 const Home = () => {
   return (
     <Background id="home">
-      <div className="  flex flex-col  items-center     lg:items-end  justify-center  gap-20  lg:flex-row section mt-0 min-h-screen  ">
+      <div className="  flex flex-col  items-center   lg:items-end  justify-center  gap-20  lg:flex-row section mt-0 min-h-screen  ">
         {/* Description */}
 
         <div className="flex flex-col items-center lg:items-start justify-center gap-6  self-center mt-14 px-1 text-white  text-center lg:text-left  flex-1 ">
