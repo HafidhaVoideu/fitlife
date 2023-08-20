@@ -27,7 +27,7 @@ const List = ({ style, isMenu }: ListProps) => {
       onClick={() => isMenu(false)}
       className={`${
         style === "desktop" ? desktopStyle : mobileStyle
-      } capitalize`}
+      } capitalize active:text-blue-200 `}
     >
       <a href={item.ref}> {item.tag} </a>
     </li>

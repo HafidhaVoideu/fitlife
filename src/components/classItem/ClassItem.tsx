@@ -7,7 +7,6 @@ type ClassProps = {
 };
 
 const ClassItem = ({ icon, classType, des, photo, percentage }: ClassProps) => {
-  const x = "77";
   return (
     <article className="rounded-lg bg-white flex-shrink-0 w-full max-w-sm md:w-[47%] ">
       {/* photo */}
@@ -51,7 +50,10 @@ const ClassItem = ({ icon, classType, des, photo, percentage }: ClassProps) => {
 
           <div className="rounded-lg bg-coquelicot_2 ">
             <div
-              className={` bg-coquelicot w-[${x}%] rounded-lg  p-[.4rem]`}
+              className={` bg-coquelicot  rounded-lg  p-[.4rem]`}
+              style={{
+                width: `${percentage}%`,
+              }}
             ></div>
           </div>
         </div>

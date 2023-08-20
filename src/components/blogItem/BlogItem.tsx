@@ -21,6 +21,8 @@ const BlogItem = ({ img, date, des, title }: BlogItemProps) => {
         stiffness: 300,
       }}
       className="border-solid border-[1px] rounded-lg  border-lightgray w-full max-w-fit   sm:w-5/12  md:w-[44%] lg:w-[30%] "
+
+ 
     >
       {/* image */}
       <div className="relative flex-1 mb-5 ">
@@ -28,7 +30,7 @@ const BlogItem = ({ img, date, des, title }: BlogItemProps) => {
           <img
             src={img}
             alt="person-in-gym"
-            className="hover:scale-110 transition-transform ease-in-out duration-700 w-full cursor-pointer "
+            className="hover:scale-110 t  ransition-transform ease-in-out duration-700 w-full cursor-pointer "
           />
         </div>
 
