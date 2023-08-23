@@ -4,6 +4,7 @@ import ClassItem from "../../../components/classItem/ClassItem";
 import SectionHeader from "../../../components/section-header/SectionHeader";
 import { classes } from "../../../data/data";
 import gym from "../../../assets/gym.mp4";
+import poster from "../../../assets/video-banner.jpg";
 
 import { BsPlayFill, BsPauseFill } from "react-icons/bs";
 
@@ -28,6 +29,7 @@ const Classes = () => {
             controls={false}
             muted
             loop
+            poster={poster}
             className="h-full w-full  rounded-lg object-cover"
           >
             <source src={gym} type="video/mp4"></source>
@@ -40,7 +42,7 @@ const Classes = () => {
               lg:w-16 hover:opacity-60  transition-opacity duration-500"
             >
               {isPlay ? <BsPauseFill /> : <BsPlayFill />}
-            </button> 
+            </button>
           </div>
         </section>
         <SectionHeader
